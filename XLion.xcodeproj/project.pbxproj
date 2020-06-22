@@ -10,6 +10,24 @@
 		0CE5C3EB24A0BA5200E843C0 /* XLion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE5C3E124A0BA5200E843C0 /* XLion.framework */; };
 		0CE5C3F024A0BA5200E843C0 /* XLionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE5C3EF24A0BA5200E843C0 /* XLionTests.swift */; };
 		0CE5C3F224A0BA5200E843C0 /* XLion.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CE5C3E424A0BA5200E843C0 /* XLion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CE5C3FD24A0BADE00E843C0 /* URLRequestBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE5C3FC24A0BADE00E843C0 /* URLRequestBuilderProtocol.swift */; };
+		0CE5C3FF24A0BAF100E843C0 /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE5C3FE24A0BAF100E843C0 /* URLRequestBuilder.swift */; };
+		0CE5C40124A0BB0100E843C0 /* URLBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE5C40024A0BB0100E843C0 /* URLBuilderProtocol.swift */; };
+		0CE5C40324A0BB1100E843C0 /* URLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE5C40224A0BB1100E843C0 /* URLBuilder.swift */; };
+		0CE5C40624A0BB2E00E843C0 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE5C40524A0BB2E00E843C0 /* HttpMethod.swift */; };
+		0CE5C40A24A0BB4700E843C0 /* LionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE5C40924A0BB4700E843C0 /* LionError.swift */; };
+		0CE5C40E24A0BB6B00E843C0 /* DeleteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE5C40D24A0BB6B00E843C0 /* DeleteRequest.swift */; };
+		0CE5C41124A0BB8300E843C0 /* PutRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE5C41024A0BB8300E843C0 /* PutRequest.swift */; };
+		0CE5C41424A0BB9B00E843C0 /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE5C41324A0BB9B00E843C0 /* PostRequest.swift */; };
+		0CE5C41724A0BBB400E843C0 /* GetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE5C41624A0BBB400E843C0 /* GetRequest.swift */; };
+		0CE5C41924A0BBC800E843C0 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE5C41824A0BBC800E843C0 /* BaseRequest.swift */; };
+		0CE5C41C24A0BC0C00E843C0 /* Data+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE5C41B24A0BC0C00E843C0 /* Data+extension.swift */; };
+		0CE5C41E24A0BC2000E843C0 /* Decodable+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE5C41D24A0BC2000E843C0 /* Decodable+extension.swift */; };
+		0CE5C42024A0BC3800E843C0 /* Int+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE5C41F24A0BC3800E843C0 /* Int+extension.swift */; };
+		0CE5C42224A0BC4800E843C0 /* Encodable+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE5C42124A0BC4800E843C0 /* Encodable+extension.swift */; };
+		0CE5C42424A0BC5E00E843C0 /* Headers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE5C42324A0BC5E00E843C0 /* Headers.swift */; };
+		0CE5C42724A0BC7A00E843C0 /* QuaryParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE5C42624A0BC7A00E843C0 /* QuaryParams.swift */; };
+		0CE5C42924A0BC8C00E843C0 /* RequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE5C42824A0BC8C00E843C0 /* RequestBody.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +47,24 @@
 		0CE5C3EA24A0BA5200E843C0 /* XLionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XLionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CE5C3EF24A0BA5200E843C0 /* XLionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XLionTests.swift; sourceTree = "<group>"; };
 		0CE5C3F124A0BA5200E843C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CE5C3FC24A0BADE00E843C0 /* URLRequestBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilderProtocol.swift; sourceTree = "<group>"; };
+		0CE5C3FE24A0BAF100E843C0 /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
+		0CE5C40024A0BB0100E843C0 /* URLBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBuilderProtocol.swift; sourceTree = "<group>"; };
+		0CE5C40224A0BB1100E843C0 /* URLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBuilder.swift; sourceTree = "<group>"; };
+		0CE5C40524A0BB2E00E843C0 /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		0CE5C40924A0BB4700E843C0 /* LionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LionError.swift; sourceTree = "<group>"; };
+		0CE5C40D24A0BB6B00E843C0 /* DeleteRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteRequest.swift; sourceTree = "<group>"; };
+		0CE5C41024A0BB8300E843C0 /* PutRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutRequest.swift; sourceTree = "<group>"; };
+		0CE5C41324A0BB9B00E843C0 /* PostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
+		0CE5C41624A0BBB400E843C0 /* GetRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRequest.swift; sourceTree = "<group>"; };
+		0CE5C41824A0BBC800E843C0 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		0CE5C41B24A0BC0C00E843C0 /* Data+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+extension.swift"; sourceTree = "<group>"; };
+		0CE5C41D24A0BC2000E843C0 /* Decodable+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+extension.swift"; sourceTree = "<group>"; };
+		0CE5C41F24A0BC3800E843C0 /* Int+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+extension.swift"; sourceTree = "<group>"; };
+		0CE5C42124A0BC4800E843C0 /* Encodable+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+extension.swift"; sourceTree = "<group>"; };
+		0CE5C42324A0BC5E00E843C0 /* Headers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Headers.swift; sourceTree = "<group>"; };
+		0CE5C42624A0BC7A00E843C0 /* QuaryParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuaryParams.swift; sourceTree = "<group>"; };
+		0CE5C42824A0BC8C00E843C0 /* RequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBody.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +107,15 @@
 		0CE5C3E324A0BA5200E843C0 /* XLion */ = {
 			isa = PBXGroup;
 			children = (
+				0CE5C3FB24A0BAD300E843C0 /* builder */,
+				0CE5C40424A0BB2200E843C0 /* enum */,
+				0CE5C40B24A0BB5600E843C0 /* requests */,
+				0CE5C41A24A0BBF800E843C0 /* extensions */,
 				0CE5C3E424A0BA5200E843C0 /* XLion.h */,
 				0CE5C3E524A0BA5200E843C0 /* Info.plist */,
+				0CE5C42324A0BC5E00E843C0 /* Headers.swift */,
+				0CE5C42624A0BC7A00E843C0 /* QuaryParams.swift */,
+				0CE5C42824A0BC8C00E843C0 /* RequestBody.swift */,
 			);
 			path = XLion;
 			sourceTree = "<group>";
@@ -84,6 +127,81 @@
 				0CE5C3F124A0BA5200E843C0 /* Info.plist */,
 			);
 			path = XLionTests;
+			sourceTree = "<group>";
+		};
+		0CE5C3FB24A0BAD300E843C0 /* builder */ = {
+			isa = PBXGroup;
+			children = (
+				0CE5C3FC24A0BADE00E843C0 /* URLRequestBuilderProtocol.swift */,
+				0CE5C3FE24A0BAF100E843C0 /* URLRequestBuilder.swift */,
+				0CE5C40024A0BB0100E843C0 /* URLBuilderProtocol.swift */,
+				0CE5C40224A0BB1100E843C0 /* URLBuilder.swift */,
+			);
+			path = builder;
+			sourceTree = "<group>";
+		};
+		0CE5C40424A0BB2200E843C0 /* enum */ = {
+			isa = PBXGroup;
+			children = (
+				0CE5C40524A0BB2E00E843C0 /* HttpMethod.swift */,
+				0CE5C40924A0BB4700E843C0 /* LionError.swift */,
+			);
+			path = enum;
+			sourceTree = "<group>";
+		};
+		0CE5C40B24A0BB5600E843C0 /* requests */ = {
+			isa = PBXGroup;
+			children = (
+				0CE5C41524A0BBAA00E843C0 /* get */,
+				0CE5C41224A0BB9000E843C0 /* post */,
+				0CE5C40F24A0BB7800E843C0 /* put */,
+				0CE5C40C24A0BB5F00E843C0 /* delete */,
+				0CE5C41824A0BBC800E843C0 /* BaseRequest.swift */,
+			);
+			path = requests;
+			sourceTree = "<group>";
+		};
+		0CE5C40C24A0BB5F00E843C0 /* delete */ = {
+			isa = PBXGroup;
+			children = (
+				0CE5C40D24A0BB6B00E843C0 /* DeleteRequest.swift */,
+			);
+			path = delete;
+			sourceTree = "<group>";
+		};
+		0CE5C40F24A0BB7800E843C0 /* put */ = {
+			isa = PBXGroup;
+			children = (
+				0CE5C41024A0BB8300E843C0 /* PutRequest.swift */,
+			);
+			path = put;
+			sourceTree = "<group>";
+		};
+		0CE5C41224A0BB9000E843C0 /* post */ = {
+			isa = PBXGroup;
+			children = (
+				0CE5C41324A0BB9B00E843C0 /* PostRequest.swift */,
+			);
+			path = post;
+			sourceTree = "<group>";
+		};
+		0CE5C41524A0BBAA00E843C0 /* get */ = {
+			isa = PBXGroup;
+			children = (
+				0CE5C41624A0BBB400E843C0 /* GetRequest.swift */,
+			);
+			path = get;
+			sourceTree = "<group>";
+		};
+		0CE5C41A24A0BBF800E843C0 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0CE5C41B24A0BC0C00E843C0 /* Data+extension.swift */,
+				0CE5C41D24A0BC2000E843C0 /* Decodable+extension.swift */,
+				0CE5C41F24A0BC3800E843C0 /* Int+extension.swift */,
+				0CE5C42124A0BC4800E843C0 /* Encodable+extension.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +266,7 @@
 				TargetAttributes = {
 					0CE5C3E024A0BA5200E843C0 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					0CE5C3E924A0BA5200E843C0 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -195,6 +314,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CE5C40A24A0BB4700E843C0 /* LionError.swift in Sources */,
+				0CE5C3FD24A0BADE00E843C0 /* URLRequestBuilderProtocol.swift in Sources */,
+				0CE5C40E24A0BB6B00E843C0 /* DeleteRequest.swift in Sources */,
+				0CE5C40324A0BB1100E843C0 /* URLBuilder.swift in Sources */,
+				0CE5C42424A0BC5E00E843C0 /* Headers.swift in Sources */,
+				0CE5C42924A0BC8C00E843C0 /* RequestBody.swift in Sources */,
+				0CE5C42724A0BC7A00E843C0 /* QuaryParams.swift in Sources */,
+				0CE5C40624A0BB2E00E843C0 /* HttpMethod.swift in Sources */,
+				0CE5C42224A0BC4800E843C0 /* Encodable+extension.swift in Sources */,
+				0CE5C42024A0BC3800E843C0 /* Int+extension.swift in Sources */,
+				0CE5C41C24A0BC0C00E843C0 /* Data+extension.swift in Sources */,
+				0CE5C41124A0BB8300E843C0 /* PutRequest.swift in Sources */,
+				0CE5C41924A0BBC800E843C0 /* BaseRequest.swift in Sources */,
+				0CE5C41724A0BBB400E843C0 /* GetRequest.swift in Sources */,
+				0CE5C3FF24A0BAF100E843C0 /* URLRequestBuilder.swift in Sources */,
+				0CE5C41424A0BB9B00E843C0 /* PostRequest.swift in Sources */,
+				0CE5C41E24A0BC2000E843C0 /* Decodable+extension.swift in Sources */,
+				0CE5C40124A0BB0100E843C0 /* URLBuilderProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +477,7 @@
 		0CE5C3F624A0BA5200E843C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5NVWJ2SDAF;
@@ -348,14 +486,17 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = XLion/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = by.grodno..XLion;
+				PRODUCT_BUNDLE_IDENTIFIER = by.grodno.XLion;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +505,7 @@
 		0CE5C3F724A0BA5200E843C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5NVWJ2SDAF;
@@ -372,14 +514,16 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = XLion/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = by.grodno..XLion;
+				PRODUCT_BUNDLE_IDENTIFIER = by.grodno.XLion;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -388,6 +532,7 @@
 		0CE5C3F924A0BA5200E843C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5NVWJ2SDAF;
 				INFOPLIST_FILE = XLionTests/Info.plist;
@@ -406,6 +551,7 @@
 		0CE5C3FA24A0BA5200E843C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5NVWJ2SDAF;
 				INFOPLIST_FILE = XLionTests/Info.plist;
