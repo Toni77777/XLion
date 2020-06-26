@@ -26,7 +26,7 @@ public class GetRequest<T: Decodable>: BaseRequest<T> {
         return [String: Any?]()
     }
 
-    final override var bodyCodable: Codable? {
+    final override var bodyEncodable: Encodable? {
         return nil
     }
 }

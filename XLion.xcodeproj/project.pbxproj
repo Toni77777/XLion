@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CD1DD5124A57BD6005F4082 /* GetRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD1DD5024A57BD6005F4082 /* GetRequestTests.swift */; };
+		0CD1DD5524A57C92005F4082 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD1DD5424A57C92005F4082 /* UserResponse.swift */; };
+		0CD1DD5724A57D03005F4082 /* RequestBodyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD1DD5624A57D03005F4082 /* RequestBodyTests.swift */; };
+		0CD1DD5A24A57E61005F4082 /* PostmanEchoGetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD1DD5924A57E61005F4082 /* PostmanEchoGetRequest.swift */; };
+		0CD1DD5C24A57EB2005F4082 /* PostmanGetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD1DD5B24A57EB2005F4082 /* PostmanGetResponse.swift */; };
 		0CE5C3EB24A0BA5200E843C0 /* XLion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE5C3E124A0BA5200E843C0 /* XLion.framework */; };
 		0CE5C3F024A0BA5200E843C0 /* XLionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE5C3EF24A0BA5200E843C0 /* XLionTests.swift */; };
 		0CE5C3F224A0BA5200E843C0 /* XLion.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CE5C3E424A0BA5200E843C0 /* XLion.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -41,6 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CD1DD5024A57BD6005F4082 /* GetRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRequestTests.swift; sourceTree = "<group>"; };
+		0CD1DD5424A57C92005F4082 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		0CD1DD5624A57D03005F4082 /* RequestBodyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBodyTests.swift; sourceTree = "<group>"; };
+		0CD1DD5924A57E61005F4082 /* PostmanEchoGetRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanEchoGetRequest.swift; sourceTree = "<group>"; };
+		0CD1DD5B24A57EB2005F4082 /* PostmanGetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanGetResponse.swift; sourceTree = "<group>"; };
 		0CE5C3E124A0BA5200E843C0 /* XLion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XLion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CE5C3E424A0BA5200E843C0 /* XLion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLion.h; sourceTree = "<group>"; };
 		0CE5C3E524A0BA5200E843C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,6 +96,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CD1DD4E24A57BB8005F4082 /* requests */ = {
+			isa = PBXGroup;
+			children = (
+				0CD1DD4F24A57BC3005F4082 /* get */,
+			);
+			path = requests;
+			sourceTree = "<group>";
+		};
+		0CD1DD4F24A57BC3005F4082 /* get */ = {
+			isa = PBXGroup;
+			children = (
+				0CD1DD5024A57BD6005F4082 /* GetRequestTests.swift */,
+			);
+			path = get;
+			sourceTree = "<group>";
+		};
+		0CD1DD5224A57C35005F4082 /* unit */ = {
+			isa = PBXGroup;
+			children = (
+				0CD1DD4E24A57BB8005F4082 /* requests */,
+				0CD1DD5624A57D03005F4082 /* RequestBodyTests.swift */,
+			);
+			path = unit;
+			sourceTree = "<group>";
+		};
+		0CD1DD5324A57C76005F4082 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				0CD1DD5824A57E4F005F4082 /* requests */,
+				0CD1DD5424A57C92005F4082 /* UserResponse.swift */,
+				0CD1DD5B24A57EB2005F4082 /* PostmanGetResponse.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		0CD1DD5824A57E4F005F4082 /* requests */ = {
+			isa = PBXGroup;
+			children = (
+				0CD1DD5924A57E61005F4082 /* PostmanEchoGetRequest.swift */,
+			);
+			path = requests;
+			sourceTree = "<group>";
+		};
 		0CE5C3D724A0BA5200E843C0 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +176,8 @@
 		0CE5C3EE24A0BA5200E843C0 /* XLionTests */ = {
 			isa = PBXGroup;
 			children = (
+				0CD1DD5324A57C76005F4082 /* model */,
+				0CD1DD5224A57C35005F4082 /* unit */,
 				0CE5C3EF24A0BA5200E843C0 /* XLionTests.swift */,
 				0CE5C3F124A0BA5200E843C0 /* Info.plist */,
 			);
@@ -339,7 +394,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CD1DD5124A57BD6005F4082 /* GetRequestTests.swift in Sources */,
 				0CE5C3F024A0BA5200E843C0 /* XLionTests.swift in Sources */,
+				0CD1DD5C24A57EB2005F4082 /* PostmanGetResponse.swift in Sources */,
+				0CD1DD5A24A57E61005F4082 /* PostmanEchoGetRequest.swift in Sources */,
+				0CD1DD5524A57C92005F4082 /* UserResponse.swift in Sources */,
+				0CD1DD5724A57D03005F4082 /* RequestBodyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

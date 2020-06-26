@@ -51,7 +51,7 @@ open class BaseRequest<T: Decodable> {
         return [String: Any?]()
     }
 
-    var bodyCodable: Codable? {
+    var bodyEncodable: Encodable? {
         return nil
     }
 
@@ -65,14 +65,13 @@ open class BaseRequest<T: Decodable> {
 
         let bodyData = RequestBody(body: body,
                                    bodyDictionary: bodyDictionary,
-                                   bodyCodable: bodyCodable).data()
+                                   bodyEncodable: bodyEncodable).getData()
 
         let urlRequest = URLRequestBuilder(url: url ?? URL(string: baseUrl)!)
             .add(method: restMethod)
             .add(body: bodyData)
             .add(headers: headers)
             .build()
-
 
         return URLSession.shared.dataTaskPublisher(for: urlRequest)
             .map {

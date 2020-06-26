@@ -10,16 +10,15 @@ final class RequestBody {
 
     let body: String?
     let bodyDictionary: [String: Any?]?
-    let bodyCodable: Codable?
+    let bodyEncodable: Encodable?
 
-    init(body: String? = nil, bodyDictionary: [String: Any?]? = nil, bodyCodable: Codable? = nil) {
+    init(body: String? = nil, bodyDictionary: [String: Any?]? = nil, bodyEncodable: Encodable? = nil) {
         self.body = body
         self.bodyDictionary = bodyDictionary
-        self.bodyCodable = bodyCodable
+        self.bodyEncodable = bodyEncodable
     }
 
-    // TODO Refactor
-    func data() -> Data? {
+    func getData() -> Data? {
         var bodyData: Data?
         if let body = body, !body.isEmpty {
             bodyData = body.data(using: .utf8)
@@ -29,14 +28,13 @@ final class RequestBody {
             } catch let error {
                 Swift.print(error)
             }
+        } else if let bodyEncodable = bodyEncodable {
+            do {
+                bodyData = bodyEncodable.toData()
+            } catch let error {
+                Swift.print(error)
+            }
         }
-//        else if let bodyCodable = bodyCodable { // TODO Refactor and fix
-//            do {
-//                bodyData = try? JSONEncoder().encode(bodyCodable)
-//            } catch let error {
-//                Swift.print(error)
-//            }
-//        }
         return bodyData
     }
 }
