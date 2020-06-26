@@ -13,7 +13,7 @@ import XCTest
 class GetRequestTests: XCTestCase {
 
     func testWhenInitRequestShouldBeGetMethod() {
-        let getRequest = GetRequest<UserResponse>()
+        let getRequest = GetRequest<User>()
 
         XCTAssertEqual(getRequest.restMethod, HttpMethod.get)
     }

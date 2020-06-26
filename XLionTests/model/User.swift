@@ -8,5 +8,5 @@
 
 import Foundation
 
-struct UserResponse: Codable, Equatable {
+struct User: Codable, Equatable {
 }

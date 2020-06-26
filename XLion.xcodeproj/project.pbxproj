@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0CD1DD5124A57BD6005F4082 /* GetRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD1DD5024A57BD6005F4082 /* GetRequestTests.swift */; };
-		0CD1DD5524A57C92005F4082 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD1DD5424A57C92005F4082 /* UserResponse.swift */; };
+		0CD1DD5524A57C92005F4082 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD1DD5424A57C92005F4082 /* User.swift */; };
 		0CD1DD5724A57D03005F4082 /* RequestBodyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD1DD5624A57D03005F4082 /* RequestBodyTests.swift */; };
 		0CD1DD5A24A57E61005F4082 /* PostmanEchoGetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD1DD5924A57E61005F4082 /* PostmanEchoGetRequest.swift */; };
 		0CD1DD5C24A57EB2005F4082 /* PostmanGetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD1DD5B24A57EB2005F4082 /* PostmanGetResponse.swift */; };
@@ -47,7 +47,7 @@
 
 /* Begin PBXFileReference section */
 		0CD1DD5024A57BD6005F4082 /* GetRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRequestTests.swift; sourceTree = "<group>"; };
-		0CD1DD5424A57C92005F4082 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		0CD1DD5424A57C92005F4082 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0CD1DD5624A57D03005F4082 /* RequestBodyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBodyTests.swift; sourceTree = "<group>"; };
 		0CD1DD5924A57E61005F4082 /* PostmanEchoGetRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanEchoGetRequest.swift; sourceTree = "<group>"; };
 		0CD1DD5B24A57EB2005F4082 /* PostmanGetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanGetResponse.swift; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				0CD1DD5824A57E4F005F4082 /* requests */,
-				0CD1DD5424A57C92005F4082 /* UserResponse.swift */,
+				0CD1DD5424A57C92005F4082 /* User.swift */,
 				0CD1DD5B24A57EB2005F4082 /* PostmanGetResponse.swift */,
 			);
 			path = model;
@@ -398,7 +398,7 @@
 				0CE5C3F024A0BA5200E843C0 /* XLionTests.swift in Sources */,
 				0CD1DD5C24A57EB2005F4082 /* PostmanGetResponse.swift in Sources */,
 				0CD1DD5A24A57E61005F4082 /* PostmanEchoGetRequest.swift in Sources */,
-				0CD1DD5524A57C92005F4082 /* UserResponse.swift in Sources */,
+				0CD1DD5524A57C92005F4082 /* User.swift in Sources */,
 				0CD1DD5724A57D03005F4082 /* RequestBodyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

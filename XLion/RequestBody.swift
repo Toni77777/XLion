@@ -8,19 +8,21 @@
 
 final class RequestBody {
 
-    let body: String?
+    let bodyJson: String?
     let bodyDictionary: [String: Any?]?
     let bodyEncodable: Encodable?
 
-    init(body: String? = nil, bodyDictionary: [String: Any?]? = nil, bodyEncodable: Encodable? = nil) {
-        self.body = body
+    init(bodyJson: String? = nil,
+         bodyDictionary: [String: Any?]? = nil,
+         bodyEncodable: Encodable? = nil) {
+        self.bodyJson = bodyJson
         self.bodyDictionary = bodyDictionary
         self.bodyEncodable = bodyEncodable
     }
 
     func getData() -> Data? {
         var bodyData: Data?
-        if let body = body, !body.isEmpty {
+        if let body = bodyJson, !body.isEmpty {
             bodyData = body.data(using: .utf8)
         } else if let bodyDictionary = bodyDictionary, !bodyDictionary.isEmpty {
             do {
@@ -29,11 +31,7 @@ final class RequestBody {
                 Swift.print(error)
             }
         } else if let bodyEncodable = bodyEncodable {
-            do {
-                bodyData = bodyEncodable.toData()
-            } catch let error {
-                Swift.print(error)
-            }
+            bodyData = bodyEncodable.toData()
         }
         return bodyData
     }
