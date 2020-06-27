@@ -43,7 +43,7 @@ open class BaseRequest<T: Decodable> {
 
     // MARK: Body
 
-    var body: String? {
+    var bodyJson: String? {
         return nil
     }
 
@@ -63,7 +63,7 @@ open class BaseRequest<T: Decodable> {
             .add(quaryParams: quaryParams)
             .build()
 
-        let bodyData = RequestBody(bodyJson: body,
+        let bodyData = RequestBody(bodyJson: bodyJson,
                                    bodyDictionary: bodyDictionary,
                                    bodyEncodable: bodyEncodable).getData()
 

@@ -23,7 +23,7 @@ final class URLBuilder: URLBuilderProtocol {
     }
 
     func add(quaryParams: QuaryParams) -> URLBuilderProtocol {
-        urlComponents?.queryItems = quaryParams.map { return URLQueryItem(name: $0, value: $1) }
+        urlComponents?.queryItems = quaryParams.map { URLQueryItem(name: $0, value: $1) }
         return self
     }
 

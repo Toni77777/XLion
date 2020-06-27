@@ -18,7 +18,7 @@ public class GetRequest<T: Decodable>: BaseRequest<T> {
 
     // MARK: Body
 
-    final override var body: String? {
+    final override var bodyJson: String? {
         return nil
     }
 
