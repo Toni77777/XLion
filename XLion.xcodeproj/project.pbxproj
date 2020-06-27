@@ -14,6 +14,8 @@
 		0CD1DD5C24A57EB2005F4082 /* PostmanGetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD1DD5B24A57EB2005F4082 /* PostmanGetResponse.swift */; };
 		0CE0A6B824A7635100158FB8 /* BaseRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE0A6B724A7635100158FB8 /* BaseRequestTests.swift */; };
 		0CE0A6BF24A79E8D00158FB8 /* PostRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE0A6BE24A79E8D00158FB8 /* PostRequestTests.swift */; };
+		0CE0A6C224A7A32100158FB8 /* PutRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE0A6C124A7A32100158FB8 /* PutRequestTests.swift */; };
+		0CE0A6C524A7A39200158FB8 /* DeleteRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE0A6C424A7A39200158FB8 /* DeleteRequestTests.swift */; };
 		0CE5C3EB24A0BA5200E843C0 /* XLion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE5C3E124A0BA5200E843C0 /* XLion.framework */; };
 		0CE5C3F224A0BA5200E843C0 /* XLion.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CE5C3E424A0BA5200E843C0 /* XLion.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0CE5C3FD24A0BADE00E843C0 /* URLRequestBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE5C3FC24A0BADE00E843C0 /* URLRequestBuilderProtocol.swift */; };
@@ -54,6 +56,8 @@
 		0CD1DD5B24A57EB2005F4082 /* PostmanGetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanGetResponse.swift; sourceTree = "<group>"; };
 		0CE0A6B724A7635100158FB8 /* BaseRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequestTests.swift; sourceTree = "<group>"; };
 		0CE0A6BE24A79E8D00158FB8 /* PostRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequestTests.swift; sourceTree = "<group>"; };
+		0CE0A6C124A7A32100158FB8 /* PutRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutRequestTests.swift; sourceTree = "<group>"; };
+		0CE0A6C424A7A39200158FB8 /* DeleteRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteRequestTests.swift; sourceTree = "<group>"; };
 		0CE5C3E124A0BA5200E843C0 /* XLion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XLion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CE5C3E424A0BA5200E843C0 /* XLion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLion.h; sourceTree = "<group>"; };
 		0CE5C3E524A0BA5200E843C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,8 +105,10 @@
 		0CD1DD4E24A57BB8005F4082 /* requests */ = {
 			isa = PBXGroup;
 			children = (
-				0CE0A6BD24A79E7B00158FB8 /* post */,
 				0CD1DD4F24A57BC3005F4082 /* get */,
+				0CE0A6BD24A79E7B00158FB8 /* post */,
+				0CE0A6C024A7A30A00158FB8 /* put */,
+				0CE0A6C324A7A37D00158FB8 /* delete */,
 				0CE0A6B724A7635100158FB8 /* BaseRequestTests.swift */,
 			);
 			path = requests;
@@ -149,6 +155,22 @@
 				0CE0A6BE24A79E8D00158FB8 /* PostRequestTests.swift */,
 			);
 			path = post;
+			sourceTree = "<group>";
+		};
+		0CE0A6C024A7A30A00158FB8 /* put */ = {
+			isa = PBXGroup;
+			children = (
+				0CE0A6C124A7A32100158FB8 /* PutRequestTests.swift */,
+			);
+			path = put;
+			sourceTree = "<group>";
+		};
+		0CE0A6C324A7A37D00158FB8 /* delete */ = {
+			isa = PBXGroup;
+			children = (
+				0CE0A6C424A7A39200158FB8 /* DeleteRequestTests.swift */,
+			);
+			path = delete;
 			sourceTree = "<group>";
 		};
 		0CE5C3D724A0BA5200E843C0 = {
@@ -409,7 +431,9 @@
 				0CD1DD5124A57BD6005F4082 /* GetRequestTests.swift in Sources */,
 				0CD1DD5C24A57EB2005F4082 /* PostmanGetResponse.swift in Sources */,
 				0CD1DD5A24A57E61005F4082 /* PostmanEchoGetRequest.swift in Sources */,
+				0CE0A6C524A7A39200158FB8 /* DeleteRequestTests.swift in Sources */,
 				0CD1DD5524A57C92005F4082 /* User.swift in Sources */,
+				0CE0A6C224A7A32100158FB8 /* PutRequestTests.swift in Sources */,
 				0CD1DD5724A57D03005F4082 /* RequestBodyTests.swift in Sources */,
 				0CE0A6B824A7635100158FB8 /* BaseRequestTests.swift in Sources */,
 			);

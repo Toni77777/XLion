@@ -12,7 +12,7 @@ import XCTest
 
 class PostRequestTests: XCTestCase {
 
-    func testWhenInitRequestShouldBeGetMethod() {
+    func testWhenInitRequestShouldBePostMethod() {
         let postRequest = PostRequest<User>()
 
         XCTAssertEqual(postRequest.restMethod, HttpMethod.post)
