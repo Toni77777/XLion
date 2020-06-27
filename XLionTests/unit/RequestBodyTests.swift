@@ -67,4 +67,50 @@ class RequestBodyTests: XCTestCase {
         XCTAssertNil(requestBody.bodyDictionary)
         XCTAssertNotNil(requestBody.bodyEncodable)
     }
+
+    func testWhenInitializeWithoutParamsShouldAllPropertiesBeNil() {
+        let requestBody = RequestBody()
+
+        XCTAssertNil(requestBody.bodyJson)
+        XCTAssertNil(requestBody.bodyDictionary)
+        XCTAssertNil(requestBody.bodyEncodable)
+    }
+
+    func testGetDataShouldBeNilWhenInitializeWithoutParams() {
+        let requestBody = RequestBody()
+
+        XCTAssertNil(requestBody.getData())
+    }
+
+    func testGetDataShouldNotBeNilWhenInitializeWithBodyJson() {
+        let userJsonString = "{ \"name\" : \"Lion\" }"
+        let userData = userJsonString.data(using: .utf8)
+
+        let requestBody = RequestBody(bodyJson: userJsonString)
+
+        XCTAssertNotNil(requestBody.getData())
+        XCTAssertEqual(requestBody.getData(), userData)
+    }
+
+    func testGetDataShouldNotBeNilWhenInitializeWithBodyDictionary() throws {
+        let bodyDictionary: [String: String] = [
+            "name": "Lion"
+        ]
+        let bodyData = try JSONSerialization.data(withJSONObject: bodyDictionary, options: [])
+
+        let requestBody = RequestBody(bodyDictionary: bodyDictionary)
+
+        XCTAssertNotNil(requestBody.getData())
+        XCTAssertEqual(requestBody.getData(), bodyData)
+    }
+
+    func testGetDataShouldNotBeNilWhenInitializeWithBodyEncodable() {
+        let user = User()
+        let userData = user.toData()
+
+        let requestBody = RequestBody(bodyEncodable: user)
+
+        XCTAssertNotNil(requestBody.getData())
+        XCTAssertEqual(requestBody.getData(), userData)
+    }
 }
